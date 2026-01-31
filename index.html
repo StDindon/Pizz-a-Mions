@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pizz'a Mions - Pizzeria italienne authentique à Mions. Découvrez nos pizzas traditionnelles préparées avec passion.">
-    <title>Pizz'a Mions - La vraie pizza italienne à Mions</title>
+    <meta name="description" content="Pizz'a Mions - Pizzeria italienne authentique à Mions. La vraie pizza napolitaine avec des ingrédients italiens de qualité.">
+    <title>Pizz'a Mions - Autentica Pizza Italiana</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
@@ -32,14 +32,22 @@
                 
                 <div class="nav-menu" id="navMenu">
                     <ul class="nav-links">
-                        <li><a href="#accueil" class="nav-link" data-text="Accueil">Accueil</a></li>
-                        <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
-                        <li><a href="#histoire" class="nav-link" data-text="Histoire">Histoire</a></li>
-                        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+                        <li><a href="#accueil" class="nav-link" data-text="Accueil" data-fr="Accueil" data-en="Home" data-it="Home">Accueil</a></li>
+                        <li><a href="#services" class="nav-link" data-text="Services" data-fr="Services" data-en="Services" data-it="Servizi">Services</a></li>
+                        <li><a href="#histoire" class="nav-link" data-text="Histoire" data-fr="Histoire" data-en="History" data-it="Storia">Histoire</a></li>
+                        <li><a href="#contact" class="nav-link" data-text="Contact" data-fr="Contact" data-en="Contact" data-it="Contatto">Contact</a></li>
                     </ul>
+                    
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="it">IT</button>
+                    </div>
+                    
                     <a href="tel:0437255067" class="nav-cta">
                         <span>04 37 25 50 67</span>
-                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-phone"></i>
                     </a>
                 </div>
             </div>
@@ -50,16 +58,13 @@
     <section class="hero" id="accueil">
         <div class="hero-bg">
             <div class="hero-shapes">
-                <div class="shape shape-1" style="
-      background-image: url('images/facade.jpg');">
+                <div class="shape shape-1" style="background-image: url('images/facade.jpg');">
                     <div class="shape-overlay"></div>
                 </div>
-                <div class="shape shape-2" style="
-      background-image: url('images/gerant.jpg');">
+                <div class="shape shape-2" style="background-image: url('images/gerant.jpg');">
                     <div class="shape-overlay"></div>
                 </div>
-                <div class="shape shape-3" style="
-      background-image: url('images/pizza.jpg');">
+                <div class="shape shape-3" style="background-image: url('images/pizza.jpg');">
                     <div class="shape-overlay"></div>
                 </div>
             </div>
@@ -67,18 +72,19 @@
         
         <div class="hero-container">
             <div class="hero-badge">
-                <span class="badge-text">TRADITION NAPOLITAINE • DEPUIS 1889</span>
+                <div class="badge-flag"></div>
+                <span class="badge-text" data-fr="TRADITION NAPOLITAINE • DEPUIS 1889" data-en="NEAPOLITAN TRADITION • SINCE 1889" data-it="TRADIZIONE NAPOLETANA • DAL 1889">TRADITION NAPOLITAINE • DEPUIS 1889</span>
                 <div class="badge-icon">
                     <i class="fas fa-fire"></i>
                 </div>
             </div>
             
             <div class="hero-content">
-                <div class="hero-background-text">PIZZERIA</div>
+                <div class="hero-background-text">ITALIA</div>
                 
                 <div class="hero-subtitle-wrapper">
                     <span class="hero-line"></span>
-                    <span class="hero-subtitle">Authentique Pizza Italienne</span>
+                    <span class="hero-subtitle" data-fr="Authentique Pizza Napolitaine" data-en="Authentic Neapolitan Pizza" data-it="Autentica Pizza Napoletana">Authentique Pizza Napolitaine</span>
                     <span class="hero-line"></span>
                 </div>
                 
@@ -87,20 +93,19 @@
                     <span class="title-word title-word-2">MIONS</span>
                 </h1>
                 
-                <p class="hero-description">
-                    L'art de la pizza napolitaine<br>
-                    au cœur de Mions
+                <p class="hero-description" data-fr="L'art de la vraie pizza italienne<br>au cœur de Mions" data-en="The art of authentic Italian pizza<br>in the heart of Mions" data-it="L'arte della vera pizza italiana<br>nel cuore di Mions">
+                    L'art de la vraie pizza italienne<br>au cœur de Mions
                 </p>
                 
                 <div class="hero-actions">
                     <a href="#contact" class="hero-btn hero-btn-primary">
-                        <span>Réserver une table</span>
+                        <span data-fr="Réserver une table" data-en="Book a table" data-it="Prenota un tavolo">Réserver une table</span>
                         <div class="btn-icon">
                             <i class="fas fa-utensils"></i>
                         </div>
                     </a>
                     <a href="#services" class="hero-btn hero-btn-secondary">
-                        <span>Nos services</span>
+                        <span data-fr="Nos services" data-en="Our services" data-it="I nostri servizi">Nos services</span>
                         <div class="btn-icon">
                             <i class="fas fa-arrow-down"></i>
                         </div>
@@ -109,23 +114,24 @@
             </div>
             
             <div class="hero-info">
+                <div class="info-divider-flag"></div>
                 <div class="info-item">
-                    <div class="info-icon">
+                    <div class="info-icon info-icon-verde">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div class="info-content">
-                        <span class="info-label">Adresse</span>
+                        <span class="info-label" data-fr="Adresse" data-en="Address" data-it="Indirizzo">Adresse</span>
                         <span class="info-value">105 Rue du 23 Août 1944, Mions</span>
                     </div>
                 </div>
                 <div class="info-divider"></div>
                 <div class="info-item">
-                    <div class="info-icon">
+                    <div class="info-icon info-icon-rosso">
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="info-content">
-                        <span class="info-label">Ouvert</span>
-                        <span class="info-value">Mar-Sam : 11h-13h30 & 18h-22h</span>
+                        <span class="info-label" data-fr="Horaires" data-en="Hours" data-it="Orari">Horaires</span>
+                        <span class="info-value">Mar-Sab : 11h-13h30 & 18h-22h</span>
                     </div>
                 </div>
             </div>
@@ -141,16 +147,16 @@
     <div class="marquee-section">
         <div class="marquee">
             <div class="marquee-content">
-                <span>★ PIZZA NAPOLITAINE</span>
-                <span>★ FOUR À BOIS TRADITIONNEL</span>
-                <span>★ PRODUITS FRAIS QUOTIDIENS</span>
-                <span>★ PÂTE FAIT MAISON</span>
-                <span>★ LIVRAISON MIDI</span>
-                <span>★ TOMATES SAN MARZANO DOP</span>
-                <span>★ MOZZARELLA DI BUFALA</span>
-                <span>★ PIZZA NAPOLITAINE</span>
-                <span>★ FOUR À BOIS TRADITIONNEL</span>
-                <span>★ PRODUITS FRAIS QUOTIDIENS</span>
+                <span data-fr="PIZZA NAPOLETANA AUTENTICA" data-en="AUTHENTIC NEAPOLITAN PIZZA" data-it="PIZZA NAPOLETANA AUTENTICA">PIZZA NAPOLETANA AUTENTICA</span>
+                <span data-fr="FORNO A LEGNA TRADIZIONALE" data-en="TRADITIONAL WOOD-FIRED OVEN" data-it="FORNO A LEGNA TRADIZIONALE">FORNO A LEGNA TRADIZIONALE</span>
+                <span data-fr="POMODORI SAN MARZANO DOP" data-en="SAN MARZANO DOP TOMATOES" data-it="POMODORI SAN MARZANO DOP">POMODORI SAN MARZANO DOP</span>
+                <span data-fr="MOZZARELLA DI BUFALA CAMPANA" data-en="MOZZARELLA DI BUFALA CAMPANA" data-it="MOZZARELLA DI BUFALA CAMPANA">MOZZARELLA DI BUFALA CAMPANA</span>
+                <span data-fr="BASILIC FRAIS ITALIEN" data-en="FRESH ITALIAN BASIL" data-it="BASILICO FRESCO ITALIANO">BASILIC FRAIS ITALIEN</span>
+                <span data-fr="HUILE D'OLIVE EXTRA VIERGE" data-en="EXTRA VIRGIN OLIVE OIL" data-it="OLIO EXTRAVERGINE D'OLIVA">HUILE D'OLIVE EXTRA VIERGE</span>
+                <span data-fr="PIZZAIOLO FORMÉ EN ITALIE" data-en="PIZZAIOLO TRAINED IN ITALY" data-it="PIZZAIOLO FORMATO IN ITALIA">PIZZAIOLO FORMÉ EN ITALIE</span>
+                <span data-fr="PIZZA NAPOLETANA AUTENTICA" data-en="AUTHENTIC NEAPOLITAN PIZZA" data-it="PIZZA NAPOLETANA AUTENTICA">PIZZA NAPOLETANA AUTENTICA</span>
+                <span data-fr="FORNO A LEGNA TRADIZIONALE" data-en="TRADITIONAL WOOD-FIRED OVEN" data-it="FORNO A LEGNA TRADIZIONALE">FORNO A LEGNA TRADIZIONALE</span>
+                <span data-fr="POMODORI SAN MARZANO DOP" data-en="SAN MARZANO DOP TOMATOES" data-it="POMODORI SAN MARZANO DOP">POMODORI SAN MARZANO DOP</span>
             </div>
         </div>
     </div>
@@ -161,81 +167,88 @@
             <div class="section-header">
                 <span class="section-number">01</span>
                 <div class="section-title-wrapper">
-                    <h2 class="section-title">NOS SERVICES</h2>
-                    <p class="section-subtitle">Tout ce que nous vous proposons</p>
+                    <h2 class="section-title" data-fr="NOS SERVICES" data-en="OUR SERVICES" data-it="I NOSTRI SERVIZI">NOS SERVICES</h2>
+                    <p class="section-subtitle" data-fr="Tout ce que nous vous offrons" data-en="Everything we offer you" data-it="Tutto quello che vi offriamo">Tout ce que nous vous offrons</p>
                 </div>
             </div>
             
             <div class="services-grid">
                 <div class="service-card service-featured">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">01</div>
                     <div class="service-icon">
                         <i class="fas fa-motorcycle"></i>
                     </div>
-                    <h3 class="service-title">Livraison</h3>
-                    <p class="service-description">Profitez de nos pizzas chez vous tous les midis</p>
-                    <div class="service-tag">Populaire</div>
+                    <h3 class="service-title" data-fr="Livraison à domicile" data-en="Home delivery" data-it="Consegna a domicilio">Livraison à domicile</h3>
+                    <p class="service-description" data-fr="Dégustez nos pizzas chez vous tous les jours à midi" data-en="Enjoy our pizzas at home every day at lunch" data-it="Gustate le nostre pizze a casa vostra tutti i giorni a pranzo">Dégustez nos pizzas chez vous tous les jours à midi</p>
+                    <div class="service-tag" data-fr="Populaire" data-en="Popular" data-it="Popolare">Populaire</div>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">02</div>
                     <div class="service-icon">
                         <i class="fas fa-shopping-bag"></i>
                     </div>
-                    <h3 class="service-title">À emporter</h3>
-                    <p class="service-description">Commandez et récupérez sur place</p>
+                    <h3 class="service-title" data-fr="À emporter" data-en="Takeaway" data-it="Da asporto">À emporter</h3>
+                    <p class="service-description" data-fr="Commandez et récupérez sur place" data-en="Order and pick up on site" data-it="Ordinate e ritirate sul posto">Commandez et récupérez sur place</p>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">03</div>
                     <div class="service-icon">
                         <i class="fas fa-couch"></i>
                     </div>
-                    <h3 class="service-title">Buffet</h3>
-                    <p class="service-description">Espace buffet pour vos événements</p>
+                    <h3 class="service-title" data-fr="Buffet" data-en="Buffet" data-it="Buffet">Buffet</h3>
+                    <p class="service-description" data-fr="Espace buffet pour vos événements" data-en="Buffet area for your events" data-it="Spazio buffet per i vostri eventi">Espace buffet pour vos événements</p>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">04</div>
                     <div class="service-icon">
                         <i class="fas fa-glass-cheers"></i>
                     </div>
-                    <h3 class="service-title">Événements privés</h3>
-                    <p class="service-description">Anniversaires, repas d'entreprise...</p>
+                    <h3 class="service-title" data-fr="Événements privés" data-en="Private events" data-it="Eventi privati">Événements privés</h3>
+                    <p class="service-description" data-fr="Anniversaires, déjeuners d'entreprise..." data-en="Birthdays, corporate lunches..." data-it="Compleanni, pranzi aziendali...">Anniversaires, déjeuners d'entreprise...</p>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">05</div>
                     <div class="service-icon">
                         <i class="fas fa-ring"></i>
                     </div>
-                    <h3 class="service-title">Mariages</h3>
-                    <p class="service-description">Réceptions de mariage mémorables</p>
+                    <h3 class="service-title" data-fr="Mariages" data-en="Weddings" data-it="Matrimoni">Mariages</h3>
+                    <p class="service-description" data-fr="Réceptions de mariage mémorables" data-en="Memorable wedding receptions" data-it="Ricevimenti di matrimonio memorabili">Réceptions de mariage mémorables</p>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">06</div>
                     <div class="service-icon">
                         <i class="fas fa-snowflake"></i>
                     </div>
-                    <h3 class="service-title">Climatisation</h3>
-                    <p class="service-description">Confort toute l'année</p>
+                    <h3 class="service-title" data-fr="Climatisation" data-en="Air conditioning" data-it="Climatizzazione">Climatisation</h3>
+                    <p class="service-description" data-fr="Confort toute l'année" data-en="Comfort all year round" data-it="Comfort tutto l'anno">Confort toute l'année</p>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-flag"></div>
                     <div class="service-corner"></div>
                     <div class="service-number">07</div>
                     <div class="service-icon">
                         <i class="fas fa-parking"></i>
                     </div>
-                    <h3 class="service-title">Parking</h3>
-                    <p class="service-description">Stationnement facile et gratuit</p>
+                    <h3 class="service-title" data-fr="Parking" data-en="Parking" data-it="Parcheggio">Parking</h3>
+                    <p class="service-description" data-fr="Stationnement facile et gratuit" data-en="Easy and free parking" data-it="Parcheggio facile e gratuito">Stationnement facile et gratuit</p>
                 </div>
             </div>
         </div>
@@ -247,8 +260,8 @@
             <div class="section-header">
                 <span class="section-number">02</span>
                 <div class="section-title-wrapper">
-                    <h2 class="section-title">NOTRE HISTOIRE</h2>
-                    <p class="section-subtitle">De Naples à Mions</p>
+                    <h2 class="section-title" data-fr="NOTRE HISTOIRE" data-en="OUR STORY" data-it="LA NOSTRA STORIA">NOTRE HISTOIRE</h2>
+                    <p class="section-subtitle" data-fr="De Naples à Mions" data-en="From Naples to Mions" data-it="Da Napoli a Mions">De Naples à Mions</p>
                 </div>
             </div>
             
@@ -259,55 +272,56 @@
                             <div class="image-placeholder">
                                 <i class="fas fa-crown"></i>
                             </div>
-                            <div class="image-label">Reine Margherita, 1889</div>
+                            <div class="image-label" data-fr="Regina Margherita, 1889" data-en="Queen Margherita, 1889" data-it="Regina Margherita, 1889">Regina Margherita, 1889</div>
                         </div>
                     </div>
                     
                     <div class="histoire-text">
-                        <h3 class="histoire-title">La Pizza Margherita</h3>
+                        <h3 class="histoire-title" data-fr="La Pizza Margherita" data-en="The Margherita Pizza" data-it="La Pizza Margherita">La Pizza Margherita</h3>
                         <div class="histoire-intro">
-                            <p>En juin 1889, la Reine Margherita d'Italie découvrit ce qui allait devenir la pizza la plus célèbre au monde...</p>
+                            <p data-fr="En juin 1889, la Reine Margherita d'Italie découvrit celle qui deviendrait la pizza la plus célèbre au monde..." data-en="In June 1889, Queen Margherita of Italy discovered what would become the world's most famous pizza..." data-it="Nel giugno del 1889, la Regina Margherita d'Italia scoprì quella che sarebbe diventata la pizza più famosa al mondo...">En juin 1889, la Reine Margherita d'Italie découvrit celle qui deviendrait la pizza la plus célèbre au monde...</p>
                         </div>
                         
                         <div class="histoire-paragraphs">
-                            <p>La Margherita : au nom de la Reine. En juin 1889, la Reine Margherita, accompagnée de son mari Umberto I, décide de partir en tournée d'inspection dans son royaume italien.</p>
+                            <p data-fr="La Margherita : au nom de la Reine. En juin 1889, la Reine Margherita, accompagnée de son mari Umberto I, décide de partir en tournée d'inspection dans son royaume italien." data-en="The Margherita: named after the Queen. In June 1889, Queen Margherita, accompanied by her husband Umberto I, decided to go on an inspection tour of her Italian kingdom." data-it="La Margherita: in onore della Regina. Nel giugno del 1889, la Regina Margherita, accompagnata da suo marito Umberto I, decise di partire in tournée d'ispezione nel suo regno italiano.">La Margherita : au nom de la Reine. En juin 1889, la Reine Margherita, accompagnée de son mari Umberto I, décide de partir en tournée d'inspection dans son royaume italien.</p>
                             
-                            <p>Durant ses voyages autour de l'Italie, elle voit beaucoup de gens, particulièrement les paysans, mangeant ce pain, grand et plat. Curieuse, la reine commande à l'un de ses gardes de lui apporter un de ces pains de pizza.</p>
+                            <p data-fr="Durant ses voyages autour de l'Italie, elle voit beaucoup de gens, particulièrement les paysans, mangeant ce pain, grand et plat. Curieuse, la reine commande à l'un de ses gardes de lui apporter un de ces pains de pizza." data-en="During her travels around Italy, she saw many people, especially peasants, eating this large, flat bread. Curious, the queen ordered one of her guards to bring her one of these pizza breads." data-it="Durante i suoi viaggi in Italia, vide molte persone, in particolare i contadini, mangiare questo pane grande e piatto. Curiosa, la regina ordinò a una delle sue guardie di portarle uno di questi pani pizza.">Durant ses voyages autour de l'Italie, elle voit beaucoup de gens, particulièrement les paysans, mangeant ce pain, grand et plat. Curieuse, la reine commande à l'un de ses gardes de lui apporter un de ces pains de pizza.</p>
                             
-                            <p>Pour honorer sa reine, le Chef Raffaele Esposito décide de créer une pizza spéciale. Il fait cuire sa pâte au four et la complète avec des tomates, de la Mozzarella et du basilic frais : les couleurs du drapeau italien.</p>
+                            <p data-fr="Pour honorer sa reine, le Chef Raffaele Esposito décide de créer une pizza spéciale. Il fait cuire sa pâte au four et la complète avec des tomates, de la Mozzarella et du basilic frais : les couleurs du drapeau italien." data-en="To honor his queen, Chef Raffaele Esposito decided to create a special pizza. He baked his dough and topped it with tomatoes, Mozzarella and fresh basil: the colors of the Italian flag." data-it="Per onorare la sua regina, lo Chef Raffaele Esposito decise di creare una pizza speciale. Cuoceva la pasta e la completava con pomodori, Mozzarella e basilico fresco: i colori della bandiera italiana.">Pour honorer sa reine, le Chef Raffaele Esposito décide de créer une pizza spéciale. Il fait cuire sa pâte au four et la complète avec des tomates, de la Mozzarella et du basilic frais : les couleurs du drapeau italien.</p>
                             
-                            <p>Cette recette devient la pizza préférée de la Reine Margherita. La pizzeria Raffaele Esposito existe toujours à Naples, perpétuant cette tradition culinaire qui s'est répandue dans le monde entier.</p>
+                            <p data-fr="Cette recette devient la pizza préférée de la Reine Margherita. La pizzeria Raffaele Esposito existe toujours à Naples, perpétuant cette tradition culinaire qui s'est répandue dans le monde entier." data-en="This recipe became Queen Margherita's favorite pizza. The Raffaele Esposito pizzeria still exists in Naples, perpetuating this culinary tradition that has spread around the world." data-it="Questa ricetta divenne la pizza preferita della Regina Margherita. La pizzeria Raffaele Esposito esiste ancora a Napoli, perpetuando questa tradizione culinaria che si è diffusa in tutto il mondo.">Cette recette devient la pizza préférée de la Reine Margherita. La pizzeria Raffaele Esposito existe toujours à Naples, perpétuant cette tradition culinaire qui s'est répandue dans le monde entier.</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="histoire-secondary">
                     <div class="christian-story">
+                        <div class="christian-flag"></div>
                         <div class="christian-header">
-                            <span class="christian-label">Notre Histoire</span>
+                            <span class="christian-label" data-fr="Notre Histoire" data-en="Our Story" data-it="La Nostra Storia">Notre Histoire</span>
                             <h3 class="christian-title">Christian Vitale</h3>
                         </div>
                         
                         <div class="christian-content">
-                            <p>Nouveau départ pour le binôme : Jérémy travaillait déjà dans une pizzeria dans l'Ain, Christian était directeur d'un magasin de meubles et souhaitait se reconvertir.</p>
+                            <p data-fr="Nouveau départ pour le binôme : Jérémy travaillait déjà dans une pizzeria dans l'Ain, Christian était directeur d'un magasin de meubles et souhaitait se reconvertir." data-en="New start for the duo: Jérémy was already working in a pizzeria in Ain, Christian was manager of a furniture store and wanted to retrain." data-it="Nuovo départ per il binomio: Jérémy lavorava già in una pizzeria nell'Ain, Christian era direttore di un negozio di mobili e voleva riconvertirsi.">Nouveau départ pour le binôme : Jérémy travaillait déjà dans une pizzeria dans l'Ain, Christian était directeur d'un magasin de meubles et souhaitait se reconvertir.</p>
                             
-                            <p>Tous deux habitent Mions depuis une vingtaine d'années. Christian est parti en formation auprès de Julien Antoniolli, qui a terminé 6e au championnat de France Parizza en janvier.</p>
+                            <p data-fr="Tous deux habitent Mions depuis une vingtaine d'années. Christian est parti en formation auprès de Julien Antoniolli, qui a terminé 6e au championnat de France Parizza en janvier." data-en="Both have lived in Mions for about twenty years. Christian trained with Julien Antoniolli, who finished 6th in the Parizza French championship in January." data-it="Entrambi abitano a Mions da circa vent'anni. Christian è partito in formazione presso Julien Antoniolli, che ha terminato 6° al campionato di Francia Parizza a gennaio.">Tous deux habitent Mions depuis une vingtaine d'années. Christian est parti en formation auprès de Julien Antoniolli, qui a terminé 6e au championnat de France Parizza en janvier.</p>
                             
-                            <p>Chez Pizz'a Mions, vous retrouverez l'authenticité de la vraie pizza italienne, préparée avec passion et des ingrédients de qualité.</p>
+                            <p data-fr="Chez Pizz'a Mions, vous retrouverez l'authenticité de la vraie pizza italienne, préparée avec passion et des ingrédients de qualité importés directement d'Italie." data-en="At Pizz'a Mions, you will find the authenticity of real Italian pizza, prepared with passion and quality ingredients imported directly from Italy." data-it="Da Pizz'a Mions, ritroverete l'autenticità della vera pizza italiana, preparata con passione e ingredienti di qualità importati direttamente dall'Italia.">Chez Pizz'a Mions, vous retrouverez l'authenticité de la vraie pizza italienne, préparée avec passion et des ingrédients de qualité importés directement d'Italie.</p>
                         </div>
                         
                         <div class="christian-values">
                             <div class="value-badge">
                                 <i class="fas fa-check"></i>
-                                <span>Produits frais</span>
+                                <span data-fr="Produits frais" data-en="Fresh products" data-it="Prodotti freschi">Produits frais</span>
                             </div>
                             <div class="value-badge">
                                 <i class="fas fa-check"></i>
-                                <span>Savoir-faire</span>
+                                <span data-fr="Savoir-faire italien" data-en="Italian know-how" data-it="Savoir-faire italiano">Savoir-faire italien</span>
                             </div>
                             <div class="value-badge">
                                 <i class="fas fa-check"></i>
-                                <span>Accueil chaleureux</span>
+                                <span data-fr="Accueil chaleureux" data-en="Warm welcome" data-it="Accoglienza calorosa">Accueil chaleureux</span>
                             </div>
                         </div>
                     </div>
@@ -324,51 +338,52 @@
                     <div class="section-header">
                         <span class="section-number">03</span>
                         <div class="section-title-wrapper">
-                            <h2 class="section-title">HORAIRES</h2>
-                            <p class="section-subtitle">Quand nous trouver</p>
+                            <h2 class="section-title" data-fr="HORAIRES" data-en="OPENING HOURS" data-it="ORARI">HORAIRES</h2>
+                            <p class="section-subtitle" data-fr="Quand nous trouver" data-en="When to find us" data-it="Quando trovarci">Quand nous trouver</p>
                         </div>
                     </div>
                     
                     <div class="horaires-note">
+                        <div class="horaires-note-flag"></div>
                         <i class="fas fa-motorcycle"></i>
-                        <p>Livraison disponible<br>tous les midis</p>
+                        <p data-fr="Livraison disponible<br>tous les jours à midi" data-en="Delivery available<br>every day at lunch" data-it="Consegna disponibile<br>tutti i giorni a pranzo">Livraison disponible<br>tous les jours à midi</p>
                     </div>
                 </div>
                 
                 <div class="horaires-right">
                     <div class="horaires-list">
                         <div class="horaire-item">
-                            <span class="jour">Lundi</span>
+                            <span class="jour" data-fr="Lundi" data-en="Monday" data-it="Lunedì">Lundi</span>
                             <span class="dots"></span>
                             <span class="heures">18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Mardi</span>
+                            <span class="jour" data-fr="Mardi" data-en="Tuesday" data-it="Martedì">Mardi</span>
                             <span class="dots"></span>
                             <span class="heures">11:00 - 13:30 / 18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Mercredi</span>
+                            <span class="jour" data-fr="Mercredi" data-en="Wednesday" data-it="Mercoledì">Mercredi</span>
                             <span class="dots"></span>
                             <span class="heures">11:00 - 13:30 / 18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Jeudi</span>
+                            <span class="jour" data-fr="Jeudi" data-en="Thursday" data-it="Giovedì">Jeudi</span>
                             <span class="dots"></span>
                             <span class="heures">11:00 - 13:30 / 18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Vendredi</span>
+                            <span class="jour" data-fr="Vendredi" data-en="Friday" data-it="Venerdì">Vendredi</span>
                             <span class="dots"></span>
                             <span class="heures">11:00 - 13:30 / 18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Samedi</span>
+                            <span class="jour" data-fr="Samedi" data-en="Saturday" data-it="Sabato">Samedi</span>
                             <span class="dots"></span>
                             <span class="heures">11:00 - 13:30 / 18:00 - 22:00</span>
                         </div>
                         <div class="horaire-item">
-                            <span class="jour">Dimanche</span>
+                            <span class="jour" data-fr="Dimanche" data-en="Sunday" data-it="Domenica">Dimanche</span>
                             <span class="dots"></span>
                             <span class="heures">18:00 - 22:00</span>
                         </div>
@@ -384,24 +399,26 @@
             <div class="section-header">
                 <span class="section-number">04</span>
                 <div class="section-title-wrapper">
-                    <h2 class="section-title">CONTACT</h2>
-                    <p class="section-subtitle">Réservez votre table ou contactez-nous</p>
+                    <h2 class="section-title" data-fr="CONTACT" data-en="CONTACT" data-it="CONTATTO">CONTACT</h2>
+                    <p class="section-subtitle" data-fr="Réservez votre table" data-en="Book your table" data-it="Prenotate il vostro tavolo">Réservez votre table</p>
                 </div>
             </div>
             
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-card">
+                        <div class="contact-flag"></div>
                         <div class="contact-icon-wrapper">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div class="contact-content">
-                            <span class="contact-label">Téléphone</span>
+                            <span class="contact-label" data-fr="Téléphone" data-en="Phone" data-it="Telefono">Téléphone</span>
                             <a href="tel:0437255067" class="contact-value">04 37 25 50 67</a>
                         </div>
                     </div>
                     
                     <div class="contact-card">
+                        <div class="contact-flag"></div>
                         <div class="contact-icon-wrapper">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -412,25 +429,27 @@
                     </div>
                     
                     <div class="contact-card">
+                        <div class="contact-flag"></div>
                         <div class="contact-icon-wrapper">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-content">
-                            <span class="contact-label">Adresse</span>
+                            <span class="contact-label" data-fr="Adresse" data-en="Address" data-it="Indirizzo">Adresse</span>
                             <span class="contact-value">105 Rue du 23 Août 1944<br>69780 Mions, France</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form-wrapper">
+                    <div class="contact-form-flag"></div>
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Nom</label>
+                                <label for="name" data-fr="Nom" data-en="Name" data-it="Nome">Nom</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Téléphone</label>
+                                <label for="phone" data-fr="Téléphone" data-en="Phone" data-it="Telefono">Téléphone</label>
                                 <input type="tel" id="phone" name="phone">
                             </div>
                         </div>
@@ -441,7 +460,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="subject">Objet</label>
+                            <label for="subject" data-fr="Sujet" data-en="Subject" data-it="Oggetto">Sujet</label>
                             <input type="text" id="subject" name="subject">
                         </div>
                         
@@ -452,7 +471,7 @@
                         </div>
                         
                         <button type="submit" class="form-submit">
-                            <span>Envoyer</span>
+                            <span data-fr="Envoyer" data-en="Send" data-it="Invia">Envoyer</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </form>
@@ -463,23 +482,25 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <div class="footer-flag-top"></div>
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <span class="footer-logo-text">PIZZ'A</span>
                         <span class="footer-logo-location">MIONS</span>
+                        <span class="footer-logo-italia" data-fr="Authentique Pizza Italienne" data-en="Authentic Italian Pizza" data-it="Autentica Pizza Italiana">Authentique Pizza Italienne</span>
                     </div>
-                    <p class="footer-tagline">La vraie pizza italienne</p>
+                    <p class="footer-tagline" data-fr="La vraie pizza italienne depuis 1889" data-en="Real Italian pizza since 1889" data-it="La vera pizza italiana dal 1889">La vraie pizza italienne depuis 1889</p>
                 </div>
                 
                 <div class="footer-links-group">
                     <div class="footer-col">
                         <h4>Navigation</h4>
                         <ul>
-                            <li><a href="#accueil">Accueil</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#histoire">Histoire</a></li>
+                            <li><a href="#accueil" data-fr="Accueil" data-en="Home" data-it="Home">Accueil</a></li>
+                            <li><a href="#services" data-fr="Services" data-en="Services" data-it="Servizi">Services</a></li>
+                            <li><a href="#histoire" data-fr="Histoire" data-en="History" data-it="Storia">Histoire</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -489,16 +510,16 @@
                         <ul>
                             <li><a href="tel:0437255067">04 37 25 50 67</a></li>
                             <li><a href="mailto:chrisssleking@hotmail.com">Email</a></li>
-                            <li>69780 Mions</li>
+                            <li>69780 Mions, France</li>
                         </ul>
                     </div>
                     
                     <div class="footer-col">
-                        <h4>Horaires</h4>
+                        <h4 data-fr="Horaires" data-en="Hours" data-it="Orari">Horaires</h4>
                         <ul>
-                            <li>Mar-Sam : 11h-13h30</li>
+                            <li>Mar-Sab : 11h-13h30</li>
                             <li>& 18h-22h</li>
-                            <li>Dim-Lun : 18h-22h</li>
+                            <li>Dom-Lun : 18h-22h</li>
                         </ul>
                     </div>
                 </div>
@@ -510,7 +531,7 @@
                     <a href="mentions-legales.html">Mentions légales</a>
                 </div>
                 <div class="footer-bottom-right">
-                    <p>Créé par <a href="https://lbsdigital.fr" target="_blank">LBS Digital</a></p>
+                    <p data-fr="Créé par" data-en="Created by" data-it="Creato da">Créé par <a href="https://lbsdigital.fr" target="_blank">LBS Digital</a></p>
                 </div>
             </div>
         </div>
